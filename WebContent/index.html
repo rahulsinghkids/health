@@ -1,0 +1,73 @@
+
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>RAHUL SINGH</title>
+    <style type="text/css">
+        #zz{
+            font-size: 3.2vw;
+            font-style:italic;
+            font-family: algerian;
+            color: red;
+            background-color: cyan;
+        }
+        body{
+            background-image: url("log.jpg");
+        }
+
+    </style>
+  </head>
+  <body>
+  
+    <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">USER EMAIL</label>
+    <input type="email" class="form-control" id="qq" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">PASSWORD</label>
+    <input type="password" class="form-control" id="ww">
+  </div>
+  
+  <button type="submit" class="btn btn-primary" onclick="check()">LOGIN</button>
+</form>
+   
+
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        function check()
+        {
+
+            var uid = document.getElementById("qq").value;
+            var upass = document.getElementById("ww").value;
+            
+            if(uid == "rahul@gmail.com" && upass == "12345")
+            {
+               window.open("1.html");
+            }
+            else
+            {
+                document.getElementById("qq").innerHTML=" ";
+                document.getElementById("ww").innerHTML=" ";
+                alert("wrong id or password");
+            }
+        }
+
+            
+        
+        
+    </script>
+
+   
+  </body>
+</html>
